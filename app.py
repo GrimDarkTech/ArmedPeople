@@ -12,9 +12,9 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.__ml_model = keras.models.load_model("model_2")
-        self.__data_side = 100
-        self.__data_shape = (self.__data_side, self.__data_side, 1)
+        self.__ml_model = keras.models.load_model("model_1")
+        self.__data_side = 150
+        self.__data_shape = (self.__data_side, self.__data_side, 3)
 
         self.setWindowTitle('Drag & Drop')
         self.setGeometry(500, 100, 800, 800)
